@@ -1,0 +1,41 @@
+body {
+  background-color: #252830;
+  color: #f5f5f5;
+  font-family: Lato, Helvetica Neue, sans-serif;
+  font-size: 20px;
+  transition: background-color 0.25s ease; }
+  body.text-dark a {
+    color: #252830; }
+  body.text-dark .color-input {
+    color: #252830; }
+
+.wrapper {
+  height: 100vh; }
+
+a {
+  color: white;
+  transition: all .2s linear; }
+  a:hover {
+    text-decoration: none; }
+
+label {
+  display: block;
+  line-height: 1;
+  padding: 0 15px;
+  text-align: center; }
+
+footer {
+  bottom: 20px;
+  position: absolute;
+  width: 100%; }
+
+.color-input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid;
+  color: #f5f5f5;
+  font-size: 1.3em;
+  outline: none;
+  padding: 7px 3px;
+  text-align: center;
+  transition: all .2s linear; }
