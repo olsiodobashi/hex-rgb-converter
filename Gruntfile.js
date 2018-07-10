@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'dist/css/style.css': 'scss/style.scss'
+                    'assets/css/style.css': 'src/scss/style.scss'
                 }
             }
         },
@@ -25,8 +25,8 @@ module.exports = function(grunt) {
                 ]
             },
             dist: {
-                src: 'dist/css/style.css',
-                dest: 'dist/css/style.min.css'
+                src: 'assets/css/style.css',
+                dest: 'assets/css/style.min.css'
             }
         },
         typescript: {
@@ -36,12 +36,12 @@ module.exports = function(grunt) {
             },
             commonjs: {
                 options: {
-                    rootDir: 'ts/'
+                    rootDir: 'src/ts/'
                 },
                 src: [
-                    'ts/**/*.ts'
+                    'src/ts/**/*.ts'
                 ],
-                dest: 'dist/js/'
+                dest: 'assets/js/'
             }
         },
         watch: {
@@ -50,8 +50,8 @@ module.exports = function(grunt) {
                     livereload: true,
                     port: 8888
                 },
-                files: ['dist/**/*.php', 'less/**/*.less', 'ts/**/*.ts'],
-                tasks: ['sass', 'postcss', 'typescript', 'uglify']
+                files: ['src/scss/**/*.scss', 'src/ts/**/*.ts'],
+                tasks: ['sass', 'postcss', 'typescript']
             }
         }
     });
